@@ -1,699 +1,919 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="assets/newcss.css" />
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-  </head>
-
-  <body oncontextmenu="return false">
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Pavan Kumar</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i>Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i>About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i>Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#qualification" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i>Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i>Contact-Me
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Kumar - AI & Data Science Engineer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/modern.css">
+</head>
+<body data-theme="light">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-text">PAVAN KUMAR</div>
+            <div class="loader-bar"></div>
         </div>
-        <div class="nav__btns">
-          <!-- Theme change button -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
+    </div>
 
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- main-->
-
-    <main class="main">
-      <!--========================= Home =====================-->
-
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
-              <a
-                href="https://www.linkedin.com/in/pavan-kumar-kondeti-913b37258?"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-linkedin-alt home__icon"></i>
-              </a>
-
-              <a
-                href="https://github.com/Pavan143Kundeti"
-                target="_blank"
-                class="home__social-icon"
-              >
-                <i class="uil uil-github-alt home__icon"></i>
-              </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">PK</span>
             </div>
-            <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="-79"
-                    y="-46"
-                    xlink:href="assets/img/Pro.jpg"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="home__data">
-              <h1 class="home__title">Hi, I'm Pavan Kumar</h1>
-              <h3 class="home__subtitle">
-                Artificial Intelligence and Data Science Student
-              </h3>
-              <p class="home__description">
-                A Fourth-year undergraduate engineering student at
-                <strong>Annamacharya Engineering College </strong>, Rajampet.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact me<i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--======================= About========================-->
-
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
-
-        <div class="about__container container grid">
-          <img src="assets\img\about.jpg" alt="" class="about__img" />
-
-          <div class="about__data">
-            <p class="about__description">
-              BTech student in Artificial Intelligence and Data Science with practical experience in building backend applications using Spring Boot. Skilled in data science fundamentals with certification from IBM, and familiar with cloud technologies including AWS. Strong foundation in machine learning, data analysis, and software development, with a passion for solving real-world problems through intelligent and scalable solutions.
-
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">08.65+</span>
-                <span class="about__info-name">Aggregate <br />CGPA</span>
-              </div>
-
-              <div>
-                <span class="about__info-title">03+</span>
-                <span class="about__info-name"
-                  >
-                  Projects</span
-                >
-              </div>
-
-              <div>
-                <span class="about__info-title">Fresher</span>
-              </div>
-            </div>
-
-            <div class="about__buttons">
-              <a download="" href="assets/PavanKumarResume123.pdf" class="button button--flex">
-                Download CV<i class="fas fa-download button__icon"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--===================== SKILLS =====================-->
-
-      <section class="skills section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
-
-        <div class="skills__container container grid">
-          <div>
-            <!--==================== Skill 1 =================-->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="fas fa-pencil-ruler skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">Programming Languages</h1>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-              
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">C</h3>
-                  </div>
-                  
-                </div>
-                
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Java</h3>
-                    </div>
-                    
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">JavaScript</h3>
-                    </div>
-                    
-                  </div>
-                  <div class="skills__data">
-                    <div class="skills__titles">
-                      <h3 class="skills__name">Python</h3>
-                    </div>
-                   
-                  </div>
-                
-                
-              </div>
-            </div>
-
-            <!--==================== Skill 2 =================-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fas fa-code skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">IT Constructs</h1>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">DBMS</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">DS & Algorithms</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">OOP</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">OS</h3>
-                  </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <!--==================== Skill 3 =================-->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="fas fa-swatchbook skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Technologies</h1>
-                </div>
-
-                <i class="uil uil-angle-down skills__arrow"></i>
-              </div>
-
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Git</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">MongoDB</h3>
-                  </div>
-                  
-                </div>
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">MySQL</h3>
-                  </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--==================== Qualifications ==================-->
-
-      <section
-        class="qualification__section service__section"
-        id="qualification"
-      >
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My personal journey</span>
-
-        <div
-          class="qualification__container container grid services__container"
-        >
-          <div class="qualification__tabs">
-            <div
-              class="qualification__button button--flex qualification__active"
-              data-target="#education"
-            >
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
-            </div>
-          </div>
-
-          <div class="qualification__sections">
-            <!--====== Qualification Content 1 ======-->
-            <div
-              class="qualification__content qualifiation__active services__content"
-              data-content
-              id="education"
-            >
-              <!--====== Qualification 1 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">SSC</h3>
-                  <span class="qualification__subtitle"
-                    >NTR<br />High School</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2019
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 10th Summary :
-                      </h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Science, Maths, English,
-                            Social Studies,Telugu,Hindi.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>Scored 9.8 CGPA</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-
-              <!--====== Qualification 2 ======-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                <div>
-                  <h3 class="qualification__title">Class 12th</h3>
-                  <span class="qualification__subtitle"
-                    >Narayana <br />Jr College</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    - 2021
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">
-                        Class 12th Summary :
-                      </h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>
-                            Subjects studied: Physics, Chemistry, Maths,
-                            English,Sanskrit.
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__moda-icon"
-                          ></i>
-                          <p>Scored 97%</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!--====== Qualification 3 ======-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">College</h3>
-                  <span class="qualification__subtitle"
-                    >Annamacharya Institute Of Technology and Sciences, Rajampet</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    2021 - 2025
-                  </div>
-                  <span
-                    class="button button--flex button--small button--link services__button"
-                  >
-                    View More
-                    <i class="uil uil-arrow-right button__icon"></i>
-                  </span>
-                  <div class="services__modal">
-                    <div class="services__modal-content">
-                      <h4 class="services__modal-title">College Summary :</h4>
-                      <i class="uil uil-times services__modal-close"></i>
-                      <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>
-                            Studying core subjects of AI&DS including DSA, Embedded
-                            systems, Design analysis and algorithm, Operating
-                            systems, and Computer architecture .
-                          </p>
-                        </li>
-                        <li class="services__modal-service">
-                          <i
-                            class="uil uil-check-circle services__modal-icon"
-                          ></i>
-                          <p>Scored an aggregate of 8.65 CGPA till now.</p>
-                        </li>
-                  
-
-                        
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!--<span class="qualification__line"></span>-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=================== Portfolio 1===================-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">Most recent work</span>
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!-- ------------------------portfollio 1-------------------- -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/img/portfolio5.png" class="portfolio__img" />
-
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">
-                  OTT Recommendation System
-                </h3>
-                <p class="portfolio__description">
-                  Built an OTT Platform System using advanced machine learning techniques. Developed hybrid recommendation algorithms combining TF-IDF, cosine similarity, and collaborative filtering. Designed an intuitive Streamlit UI for personalized movie recommendations, integrating NLP-based sentiment analysis and real-time user feedback 
-                </p>
-                <a
-                  href="https://github.com/Pavan143Kundeti/streamlit-project"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                <a
-                  href="https://pavan143kundeti-streamlit-project-app-yktotv.streamlit.app/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-              </div>
-            </div>
-          
-            <!-- ------------------------portfollio 2-------------------- -->
             
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
             
-            <!-- ------------------------portfollio 3-------------------- -->
-           
-            <!-- ------------------------portfollio 4-------------------- -->
-          
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            <!-- ------------------------portfollio 5-------------------- -->
-           
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
         
-
-          <!-- add arrows -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <!-- add pagination -->
-          <div class="swiper-pagination"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up" data-aos-delay="200">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🚀</span>
+                        <span>AI & Data Science Engineer</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Pavan Kumar</span>
+                        <br>
+                        <span class="typing-text" id="typing-text"></span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Aspiring AI & Data Science Engineer with a passion for Python, Java, and Machine Learning. Building intelligent solutions that make a difference.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/PavanKumar_Latest_Resume.pdf" download="PavanKumar_Latest_Resume.pdf" class="btn btn-secondary">
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <span>View Projects</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                    <div class="hero-visual-container">
+                        <!-- User's Photo -->
+                        <div class="user-photo">
+                            <!-- Glow effect behind photo -->
+                            <div class="photo-glow"></div>
+                            
+                            <!-- Floating particles -->
+                            <div class="photo-particles">
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                                <div class="particle"></div>
+                            </div>
+                            
+                            <!-- Photo with overlay effects -->
+                            <div class="photo-container">
+                                <img src="assets/img/Pro.jpg" alt="Pavan Kumar" class="profile-image">
+                                <div class="photo-overlay">
+                                    <div class="overlay-gradient"></div>
+                                    <div class="overlay-shine"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Simple floating elements -->
+                        <div class="floating-elements">
+                            <div class="floating-card" style="--delay: 0s; --position: top-left">
+                                <div class="card-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Python & Java</h4>
+                                    <p>Developer</p>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card" style="--delay: 1s; --position: top-right">
+                                <div class="card-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Full Stack</h4>
+                                    <p>Development</p>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card" style="--delay: 2s; --position: bottom-left">
+                                <div class="card-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>ML & Data Science</h4>
+                                    <p>Enthusiast</p>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card" style="--delay: 3s; --position: bottom-right">
+                                <div class="card-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="card-content">
+                                    <h4>Database & Cloud</h4>
+                                    <p>Management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll Down</div>
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
-      </section>
+    </section>
 
-      <!--===================== Contact Me =====================-->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
-
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-calling contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Contact Me</h3>
-                <span class="contact__subtitle"
-                  ><a href="tel:9515159751"></a>9515159751</span
-                >
-              </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
             </div>
-
-            <div class="contact__information">
-              <i class="uil uil-envelope-minus contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle"
-                  >pavankumarkundeti237@gmail.com</span
-                >
-              </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-up">
+                    <div class="about-credentials">
+                        <p>BTech in AI & Data Science | Entry-Level Software Engineer | Full Stack Developer | Python & Java | Manual Testing | Cloud Fundamentals | SQL | GitHub | Agile | Open to Work</p>
+                    </div>
+                    
+                    <div class="about-description">
+                        <p>
+                            I am Pavan Kumar Kondeti, a recent BTech graduate in Artificial Intelligence and Data Science. I enjoy coding in Python and Java, and I have basic web development skills with HTML, CSS, and JavaScript. I also know how to use MySQL and MongoDB for databases. I like learning new technologies and working on simple projects to improve my skills. I am a quick learner, a good team player, and always ready to solve problems. In my free time, I enjoy listening to music and spending time with friends.
+                        </p>
+                    </div>
+                    
+                    <div class="education-section">
+                        <h3 class="education-title">Education</h3>
+                        <div class="education-timeline">
+                            <div class="education-item">
+                                <div class="education-content">
+                                    <h4>Bachelor of Technology in Artificial Intelligence and Data Science</h4>
+                                    <p class="education-school">Annamacharya Institute of Technology and Sciences, Rajampet, AP.</p>
+                                    <p class="education-year">2021 - 2025</p>
+                                    <div class="education-scores">
+                                        <span class="score-item">Percentage: 82%</span>
+                                        <span class="score-item">CGPA: 8.74</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-content">
+                                    <h4>Intermediate (MPC)</h4>
+                                    <p class="education-school">Narayana Jr College, Vijayawada, AP.</p>
+                                    <p class="education-year">2019 - 2021</p>
+                                    <div class="education-scores">
+                                        <span class="score-item">Percentage: 97%</span>
+                                        <span class="score-item">Marks: 969</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="education-item">
+                                <div class="education-content">
+                                    <h4>Secondary School Certificate (SSC)</h4>
+                                    <p class="education-school">NTR High School, Challapalli, AP.</p>
+                                    <p class="education-year">2018 - 2019</p>
+                                    <div class="education-scores">
+                                        <span class="score-item">Percentage: 98%</span>
+                                        <span class="score-item">CGPA: 9.8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="certificates-section">
+                        <h3 class="certificates-title">Certificates</h3>
+                        <div class="certificates-slider">
+                            <div class="certificates-track">
+                                <!-- Certificate 1 -->
+                                <div class="certificate-item">
+                                    <div class="certificate-content">
+                                        <h4>Introduction to Data Science</h4>
+                                        <p class="certificate-issuer">IBM</p>
+                                        <p class="certificate-description">Completed an introductory course providing a basic overview of data science concepts.</p>
+                                        <div class="certificate-link">
+                                            <a href="https://drive.google.com/file/d/1OR7bBbwGeXOI4Q42eoE37S5W5fgNODMR/view?usp=sharing" target="_blank" class="btn btn-small">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                <span>View Certificate</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Certificate 2 -->
+                                <div class="certificate-item">
+                                    <div class="certificate-content">
+                                        <h4>Joy of Computing using Python</h4>
+                                        <p class="certificate-issuer">NPTEL</p>
+                                        <p class="certificate-description">Elite certificate in Joy of Computing using Python, demonstrating basic Python programming skills.</p>
+                                        <div class="certificate-link">
+                                            <a href="https://drive.google.com/file/d/1FbxR0R5pFXVfWZEXHhyrVlgojopWQe29/view?usp=sharing" target="_blank" class="btn btn-small">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                <span>View Certificate</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Certificate 3 -->
+                                <div class="certificate-item">
+                                    <div class="certificate-content">
+                                        <h4>Web Development Certificate</h4>
+                                        <p class="certificate-issuer">Structured Training Program</p>
+                                        <p class="certificate-description">Completed training in HTML5, CSS3, and JavaScript to build modern, responsive websites. Developed hands-on projects and learned best practices in front-end development and UI/UX design.</p>
+                                        <ul class="certificate-skills">
+                                            <li>HTML5 & CSS3</li>
+                                            <li>JavaScript</li>
+                                            <li>Responsive Design</li>
+                                            <li>UI/UX Principles</li>
+                                        </ul>
+                                        <div class="certificate-link">
+                                            <a href="https://drive.google.com/file/d/1WNQ2KgVkpUMqsO-qXcYR9Hj88Npcj1g7/view?usp=drive_link" target="_blank" class="btn btn-small">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                <span>View Certificate</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Certificate 4 -->
+                                <div class="certificate-item">
+                                    <div class="certificate-content">
+                                        <h4>Full Stack Java Internship</h4>
+                                        <p class="certificate-issuer">Academic Virtual Internship</p>
+                                        <p class="certificate-description">Completed an academic virtual internship focused on full stack Java development. Learned Java, MySQL, front-end/back-end basics, version control, SDLC, and teamwork.</p>
+                                        <ul class="certificate-skills">
+                                            <li>Java Programming</li>
+                                            <li>MySQL Database Management</li>
+                                            <li>Full Stack Development</li>
+                                            <li>Version Control (Git, GitHub)</li>
+                                            <li>SDLC & Collaboration</li>
+                                        </ul>
+                                        <div class="certificate-link">
+                                            <a href="https://drive.google.com/file/d/1KfzUS-yeTb8sb5pBMNDi81R_DE0XvcDd/view?usp=drive_link" target="_blank" class="btn btn-small">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                <span>View Certificate</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Certificate 5 -->
+                                <div class="certificate-item">
+                                    <div class="certificate-content">
+                                        <h4>Data Science Internship Certificate</h4>
+                                        <p class="certificate-issuer">APSSDC & Indo-Euro Synchronization (IES)</p>
+                                        <p class="certificate-description">Completed an in-depth internship on "Certification on Emerging Technologies - Data Science" with an A Grade, including industry-led sessions, hands-on data analysis, and machine learning fundamentals.</p>
+                                        <ul class="certificate-skills">
+                                            <li>Data Analysis Techniques</li>
+                                            <li>Machine Learning Fundamentals</li>
+                                            <li>Industry-Led Training</li>
+                                            <li>Emerging Technologies</li>
+                                            <li>Hands-On Projects</li>
+                                        </ul>
+                                        <div class="certificate-link">
+                                            <a href="https://drive.google.com/file/d/1KZkfsP2jrnh1jEUGRv_8Jr44reD03mdM/view?usp=drive_link" target="_blank" class="btn btn-small">
+                                                <i class="fas fa-external-link-alt"></i>
+                                                <span>View Certificate</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation Arrows -->
+                            <div class="certificates-navigation">
+                                <button class="cert-nav-arrow cert-prev" id="prev-certificate">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="cert-nav-arrow cert-next" id="next-certificate">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
-
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle"
-                  >Rayachoti, Andhra Pradesh, India</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="content__label">Name</label>
-                <input type="text" class="contact__input" />
-              </div>
-
-              <div class="contact__content">
-                <label for="" class="content__label">Email</label>
-                <input type="Email" class="contact__input" />
-              </div>
-            </div>
-
-            <div class="contact__content">
-              <label for="" class="content__label">Message</label>
-              <textarea
-                name=""
-                id=""
-                cols="0"
-                rows="7"
-                class="contact__input"
-              ></textarea>
-            </div>
-
-            <div>
-              <a
-                href=" mailto: pavankumarkundeti237@gmail.com?subject=Testing out mailto! &body=This is only a test!"
-                class="button button--flex"
-              >
-                Send Message
-                <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </form>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <!--================== Footer ===============-->
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">My Technical and Professional Skills</p>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Technical Skills -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-laptop-code"></i>
+                                Programming Languages
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-globe"></i>
+                                Web Development
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-database"></i>
+                                Databases
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-brain"></i>
+                                Data Science & ML
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">NumPy</span>
+                                <span class="skill-tag">Pandas</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Streamlit</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-cloud"></i>
+                                Cloud Technologies
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">AWS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-tools"></i>
+                                Tools & IDEs
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Eclipse</span>
+                                <span class="skill-tag">Jira</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <h4 class="group-title">
+                                <i class="fas fa-users"></i>
+                                Methodologies
+                            </h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Agile</span>
+                                <span class="skill-tag">Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Non-Technical Skills -->
+                <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Non-Technical Skills</h3>
+                    </div>
+                    
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <span class="skill-name">Problem-Solving</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span class="skill-name">Teamwork</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <span class="skill-name">Communication</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <span class="skill-name">Quick Learning</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <span class="skill-name">Adaptability</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <span class="skill-name">Time Management</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <span class="skill-name">Taking Initiative</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span class="skill-name">Continuous Learning</span>
+                        </div>
+                        
+                        <div class="soft-skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <span class="skill-name">Positive Attitude</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my best work and innovative solutions</p>
+            </div>
+            
+            <div class="projects-container">
+                <div class="projects-slider">
+                    <div class="project-card active" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio5.png" alt="OTT Recommendation System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Pavan143Kundeti/streamlit-project" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://pavan143kundeti-streamlit-project-app-yktotv.streamlit.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">NLP</span>
+                            </div>
+                            <h3 class="project-title">Movie Recommendation System</h3>
+                            <p class="project-description">
+                                Built a simple movie recommendation app in Python using TF-IDF and cosine similarity for hybrid recommendations. Developed an interactive Streamlit UI for easy user input and results. Gained hands-on experience in machine learning, NLP, and app deployment.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> Hybrid Recommendation Engine</span>
+                                <span><i class="fas fa-check"></i> Interactive Streamlit UI</span>
+                                <span><i class="fas fa-check"></i> TF-IDF & Cosine Similarity</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/img/Plight_Booking_System.png" alt="Flight Booking System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Pavan143Kundeti/Plights_Booking_System" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://pavan143kundeti.github.io/Plights_Booking_System/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">jQuery</span>
+                                <span class="tag">FontAwesome</span>
+                                <span class="tag">Google Fonts</span>
+                            </div>
+                            <h3 class="project-title">Flight Booking System</h3>
+                            <p class="project-description">
+                                Developed a responsive flight booking web interface to simulate a real-world booking experience. Designed with HTML5, CSS3, Bootstrap, and JavaScript for a clean, modern look and smooth user interaction. Focused on creating a user-friendly UI that adapts seamlessly to desktop, tablet, and mobile screens. The app features searchable flight listings, detailed flight information (destination, timing, pricing, airline), and a simulated booking action to demonstrate the flow. It also includes a weather information section showing weekly forecasts for cities, enhancing the user experience.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> Flight Search & Browse</span>
+                                <span><i class="fas fa-check"></i> Detailed Flight Information</span>
+                                <span><i class="fas fa-check"></i> Booking Simulation</span>
+                                <span><i class="fas fa-check"></i> Weekly Weather Forecast</span>
+                                <span><i class="fas fa-check"></i> Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio3.png" alt="Virtual Assistant Smart-Serve">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Pavan143Kundeti/Virtual_Assistant" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">AI</span>
+                                <span class="tag">Speech Recognition</span>
+                                <span class="tag">Virtual Assistant</span>
+                            </div>
+                            <h3 class="project-title">Virtual Assistant (Smart-Serve)</h3>
+                            <p class="project-description">
+                                Smart-Serve is an AI-powered virtual assistant that understands voice and text commands to help users with daily tasks like web automation, math calculations, reminders, and time management. Using modern NLP and speech recognition technologies, it delivers real-time, intelligent task handling for improved productivity and ease of use.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> Voice and Text Commands</span>
+                                <span><i class="fas fa-check"></i> Web Automation</span>
+                                <span><i class="fas fa-check"></i> Mathematical Calculations</span>
+                                <span><i class="fas fa-check"></i> Reminders and Alarms</span>
+                                <span><i class="fas fa-check"></i> Time Management Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio4.png" alt="Online Banking System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Pavan143Kundeti/Online-Banking-System" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">GUI Development</span>
+                                <span class="tag">Data Handling</span>
+                                <span class="tag">Authentication</span>
+                            </div>
+                            <h3 class="project-title">Online Banking System</h3>
+                            <p class="project-description">
+                                A simple banking application developed using Python with a Tkinter GUI. Designed for educational purposes, it provides users with a graphical interface to manage accounts, perform secure transactions, and simulate real-world banking features. It includes user registration, login, fund transfers, bill payments, and even biometric authentication simulation to demonstrate key concepts in modern banking software.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> User Authentication System</span>
+                                <span><i class="fas fa-check"></i> Account Management</span>
+                                <span><i class="fas fa-check"></i> Fund Transfers & Bill Payments</span>
+                                <span><i class="fas fa-check"></i> Transaction History</span>
+                                <span><i class="fas fa-check"></i> Interest Calculator</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image">
+                            <img src="assets/img/portfolio1.png" alt="FoodIQ - Food Industry Management System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Pavan143Kundeti/FoodApp_SpringBoot" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Thymeleaf</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Hibernate</span>
+                            </div>
+                            <h3 class="project-title">FoodIQ — Food Industry Management System</h3>
+                            <p class="project-description">
+                                FoodIQ is an intelligent food industry management system designed to streamline the operations of restaurants or retail food stores. Built with Spring Boot and Thymeleaf, it offers a secure, responsive, and user-friendly interface for admins and staff to manage customers, inventory, and orders. With MySQL integration, built-in authentication, and role-based access control, FoodIQ ensures efficient and secure day-to-day management.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> Customer Management</span>
+                                <span><i class="fas fa-check"></i> Inventory Control</span>
+                                <span><i class="fas fa-check"></i> Order Management</span>
+                                <span><i class="fas fa-check"></i> Secure Authentication</span>
+                                <span><i class="fas fa-check"></i> Role-Based Access Control</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image">
+                            <img src="assets/img/Portfolio_Image.png" alt="Personal Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Pavan143Kundeti/Portfolio" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
+                                <span class="tag">Portfolio</span>
+                            </div>
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A modern, responsive personal portfolio website showcasing my skills, projects, and professional journey. Built with HTML, CSS, and JavaScript, featuring smooth animations, dark/light theme toggle, interactive project showcases, and a professional contact form. The website serves as my digital identity and interactive resume for potential employers and collaborators.
+                            </p>
+                            <div class="project-features">
+                                <span><i class="fas fa-check"></i> Responsive Design</span>
+                                <span><i class="fas fa-check"></i> Dark/Light Theme</span>
+                                <span><i class="fas fa-check"></i> Interactive Animations</span>
+                                <span><i class="fas fa-check"></i> Project Showcase</span>
+                                <span><i class="fas fa-check"></i> Contact Form</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <div class="projects-navigation">
+                    <button class="nav-arrow prev-arrow" id="prev-project">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-arrow next-arrow" id="next-project">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Dots Indicator -->
+                <div class="projects-dots" id="projects-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
+                </div>
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="https://github.com/Pavan143Kundeti" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i>
+                    <span>View All Projects</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on something amazing</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:pavankumarkundeti237@gmail.com">pavankumarkundeti237@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919515159751">+91 9515159751</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Rayachoti, Andhra Pradesh, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/pavan-kumar-kondeti-913b37258" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Pavan143Kundeti" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/pavankumar_9548/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/PAVAN_KUMAR_TDP" target="_blank" class="social-link">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Pavan Kumar</h1>
-            <span class="footer__subtitle"
-              >Artificial Intelligence and Data Science Student</span
-            >
-          </div>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#qualification" class="footer__link">Qualification</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact-Me</a>
-            </li>
-          </ul>
-
-          <div class="footer__socials">
-            <a
-              href="https://www.instagram.com/pavankumar_9548/"
-              class="footer__social"
-              target="__blank"
-            >
-            <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a
-              href="https://x.com/PAVAN_KUMAR_TDP"
-              target="__blank"
-              class="footer__social"
-            >
-            <i class="fa-brands fa-x-twitter"></i>
-            </a>
-          </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Pavan Kumar</h3>
+                    <p>AI & Data Science Engineer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/Pavan143Kundeti" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pavan-kumar-kondeti-913b37258" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pavankumar_9548/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/PAVAN_KUMAR_TDP" target="_blank">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pavan Kumar. All rights reserved.</p>
+            </div>
         </div>
-
-        <p class="footer__copy">&#169; Pavan Kumar. All right reserved</p>
-      </div>
     </footer>
 
-    <!--================== SCROLL TOP ==================-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
-
-    <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
     <script src="assets/ptj.js"></script>
-  </body>
+</body>
 </html>
+
